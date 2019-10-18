@@ -1,0 +1,10 @@
+/** 16-bit Not
+*/
+
+CHIP Not16{
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    Nand16 (a=in[0..15],b=in[0..15], out=out[0..15]);
+}
